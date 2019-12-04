@@ -40,12 +40,9 @@ text {
 }
 
 
-select{
-  margin-bottom: 8px;
-}
-
 
 #selectorContainer {
+  text-align: center;
   
   padding: 10px 10px 10px 10px;
 }

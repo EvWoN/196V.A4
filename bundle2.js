@@ -1,7 +1,7 @@
 //Populate both of the coin selectors with all the different slugs
 var symbols = [/*'BTC',*/'ETH','XRP','BCH','USDT','LTC','EOS','BNB','BSV','XLM','TRX','ADA','XMR','LEO','HT','LINK','MIOTA','NEO','DASH','ATOM','XTZ','ETC','MKR','ONT','USDC','CRO','XEM','DOGE','BAT','ZEC','PAX','VET','HEDG','QTUM','DCR','ZRX','TUSD','HOT','BTG','ABBC','ZB','RVN','OMG','KCS','LUNA','VSYS','CENNZ','NANO','BTM','EKT','ALGO','SNX','REP','LSK','BTT','BCD','DAI','SC','IOST','DGB','ICX','THETA','HC','BTS','WAVES','SXP'];
 for(var x = 0; x < symbols.length; x++){
-  $('#coin1Selector')
+  $('#coin2Selector')
          .append($("<option></option>")
                     .attr("value",symbols[x])
                     .text(symbols[x])); 
@@ -35,7 +35,7 @@ for(var x = 0; x < symbols.length; x++){
     groupsEnter.append('circle')
       .merge(groups.select('circle'))
         .attr('r', circleRadius)
-        .attr('fill', colorScale);
+        .attr('fill', 'green');
 
     groupsEnter.append('text')
       .merge(groups.select('text'))
@@ -44,7 +44,7 @@ for(var x = 0; x < symbols.length; x++){
         .attr('x', textOffset);
   };
 
-  const svg = d3.select('#svg1');
+  const svg = d3.select('#svg2');
 
 
   const width = +svg.attr('width');
@@ -53,7 +53,7 @@ for(var x = 0; x < symbols.length; x++){
   const render = data => {
 
     //Filter the data
-    data = data.filter(function(d) { return d.symbol  == $('#coin1Selector').val(); });
+    data = data.filter(function(d) { return d.symbol  == $('#coin2Selector').val(); });
 
 
     const title = '';
@@ -62,10 +62,10 @@ for(var x = 0; x < symbols.length; x++){
     const xAxisLabel = 'Date';
     
     //Select which COMPARISON TYPE to use
-    const yValue = d => d.close;
+    const yValue = d => d.volume;
     // const yValue = d => d[$('#comparisonSelect').val()];
     // const yAxisLabel = 'Closing Price (USD)';
-    const yAxisLabel = 'Closing Price';
+    const yAxisLabel = 'Volume';
     
     const colorValue = d => d.symbol;
     
@@ -101,7 +101,7 @@ for(var x = 0; x < symbols.length; x++){
     
     yAxisG.append('text')
         .attr('class', 'axis-label')
-        .attr('y', -60)
+        .attr('y', -90)
         .attr('x', -innerHeight / 2)
         .attr('fill', 'black')
         .attr('transform', `rotate(-90)`)
@@ -143,7 +143,7 @@ for(var x = 0; x < symbols.length; x++){
       .enter().append('path')
         .attr('class', 'line-path')
         .attr('d', d => lineGenerator(d.values))
-        .attr('stroke', d => colorScale(d.key));
+        .attr('stroke', 'green');
     
     g.append('text')
         .attr('class', 'title')
@@ -181,9 +181,9 @@ for(var x = 0; x < symbols.length; x++){
 
 
       //Create a listener for the first selected coin
-      $( "#coin1Selector" ).change(function() {
+      $( "#coin2Selector" ).change(function() {
         //Clear the old chart and draw a new one
-        d3.selectAll("#svg1 > *").remove();
+        d3.selectAll("#svg2 > *").remove();
         render(data);
       });
 
