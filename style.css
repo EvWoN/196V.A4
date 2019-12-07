@@ -4,6 +4,16 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+h2{
+  text-align: left;
+  padding-left: 70px; padding-right: 70px;
+}
+
+p{
+  text-align: left;
+  padding-left: 70px; padding-right: 70px;
+}
+
 path.line {
   fill: none;
 }

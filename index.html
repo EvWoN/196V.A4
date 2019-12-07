@@ -14,10 +14,65 @@
   </head>
   <body>
 
-      <h1>Crypto Market Hype Cycles</h1>
+      <h1>Crypto Market Hype: The Rise and Fall</h1>
 
+      <h2>0.0 - Some Background</h2>
+      <p>0.1	Not too long-ago cryptocurrencies were a hot topic on almost every media outlet in 2017 and 2018 as the value of them kept growing. It seemed that everyone suddenly had some cryptocurrency.</p>
+      <p>0.2	Cryptocurrencies even had a major impact on other parts of the technology sector such as Graphics Processing Units (GPUs) being sold out or sold at a premium globally. GPUs are predominantly used to mine these cryptocurrencies.</p>
+      <p>0.3	What are they? Cryptocurrencies are digital currencies that are secured by cryptography. Cryptocurrencies are often decentralized and instead rely on a publicly shared ledger called a blockchain to keep track of and verify transactions</p>
+
+      <h2>1.0 - What we want to know</h2>
+      <p>1.1	The questions we want to explore and answer are: Is cryptocurrency dead? How has the sudden spotlight impacted cryptocurrencies? And, should anyone even care anymore?</p>
+      <p>1.2	Our first visual of GoogleTrends data helps us demonstrate the sudden boom of Cryptocurrency interest worldwide.</p>
+      <p>1.3	It also shows us that the hype from October 2017 to April 2018 died off almost completely.</p>
 
       <!-- Visual #1 -->
+      <div class='tableauPlaceholder' id='viz1575660955695' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;A4&#47;A4-GoogleTrendsCryptocurrency&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='A4-GoogleTrendsCryptocurrency&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;A4&#47;A4-GoogleTrendsCryptocurrency&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1575660955695');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.3)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+      <h2>2.0 - Looking at Bitcoin (BTC)</h2>
+      <p>2.1	Bitcoin, by being the most popular cryptocurrency is also the best indicator-cryptocurrency to show the health of the cryptocurrency space.</p>
+      <p>2.2	Looking at this bar graph below we see that market cap is in line with the rise and fall off cryptocurrencies’ trendiness in our first visual.</p>
+      <p>2.3	It is apparent that there was a market bubble driven by major media exposure and armature investments that eventually busted due to unfeasible expectations.</p>
+
+      <!-- Visual #2 -->
+      <div style="width: 100%; overflow: hidden; overflow-x: hidden;">
+          <div class='tableauPlaceholder' id='viz1575423792021' style='position: relative'>
+              <noscript>
+                  <a href='#'>
+                      <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;13&#47;139-A4New&#47;TotalMarketCapitalizationSinceBTC&#47;1_rss.png' style='border: none' />
+                  </a>
+              </noscript>
+              <object class='tableauViz'  style='display:none;'>
+                  <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                  <param name='embed_code_version' value='3' />
+                  <param name='site_root' value='' />
+                  <param name='name' value='139-A4New&#47;TotalMarketCapitalizationSinceBTC' />
+                  <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                  <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;13&#47;139-A4New&#47;TotalMarketCapitalizationSinceBTC&#47;1.png' />
+                  <param name='animate_transition' value='yes' />
+                  <param name='display_static_image' value='yes' />
+                  <param name='display_spinner' value='yes' />
+                  <param name='display_overlay' value='yes' />
+                  <param name='display_count' value='yes' />
+              </object>
+          </div>
+          <script type='text/javascript'>
+              var divElement = document.getElementById('viz1575423792021');
+              var vizElement = divElement.getElementsByTagName('object')[0];
+              vizElement.style.width='100%';
+              vizElement.style.height=(divElement.offsetWidth*0.5)+'px';
+              var scriptElement = document.createElement('script');
+              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+          </script>
+      </div>
+      <hr />
+
+      <h2>3.0 - Looking at other currencies</h2>
+      <p>3.1	By using the visual below, we can also explore the price over time for all the other publicly traded currencies.</p>
+      <p>3.2	By browsing through some of these we see that most of the other currencies faired a lot worse than BTC. Infact, many of them were utter scams.</p>
+
+      <!-- Visual #3 -->
       <h3>Price vs Time of a selected token</h3>
       <div id="selectorContainer">
         <label for="coin1Selector">Project: </label>
@@ -28,79 +83,45 @@
       <svg width="1000" height="500" id="svg1"></svg>
       <hr />
 
-
-      <!-- Visual #2 -->
-      <h3>Volume vs Time of a selected token</h3>
-      <div id="selectorContainer">
-        <label for="coin2Selector">Project: </label>
-        <select id="coin2Selector">
-         <option value="BTC" selected>BTC</option>
-        </select>
-      </div>
-      <svg width="1000" height="500" id="svg2"></svg>
-      <hr />      
-
-
-
-
-
-      <!-- Visual #3 -->
-      <div style="width: 100%; overflow: hidden; overflow-x: hidden;">
-      <div class='tableauPlaceholder' id='viz1575423792021' style='position: relative'>
-        <noscript>
-          <a href='#'>
-            <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;13&#47;139-A4New&#47;TotalMarketCapitalizationSinceBTC&#47;1_rss.png' style='border: none' />
-          </a>
-        </noscript>
-        <object class='tableauViz'  style='display:none;'>
-          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-          <param name='embed_code_version' value='3' />
-          <param name='site_root' value='' />
-          <param name='name' value='139-A4New&#47;TotalMarketCapitalizationSinceBTC' />
-          <param name='tabs' value='no' /><param name='toolbar' value='yes' />
-          <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;13&#47;139-A4New&#47;TotalMarketCapitalizationSinceBTC&#47;1.png' /> 
-          <param name='animate_transition' value='yes' />
-          <param name='display_static_image' value='yes' />
-          <param name='display_spinner' value='yes' />
-          <param name='display_overlay' value='yes' />
-          <param name='display_count' value='yes' />
-        </object>
-      </div>               
-      <script type='text/javascript'>
-        var divElement = document.getElementById('viz1575423792021');
-        var vizElement = divElement.getElementsByTagName('object')[0];
-        vizElement.style.width='100%';
-        vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-        var scriptElement = document.createElement('script');
-        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
-      </script>
-    </div>
-    <hr />
-
-
-
-
-
-
+      <h2>4.0 - Not dead yet</h2>
+      <p>4.1	The visual below shows that there is still profit to be made and that there are some currencies that are growing. LINK with applications in Smart Contracts and backed by Oracle is 5th on the list.</p>
 
       <!-- Visual #4 -->
-     <div class='tableauPlaceholder' id='viz1575424810313' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;13&#47;139-A4New&#47;2019-BestMove&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='139-A4New&#47;2019-BestMove' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;13&#47;139-A4New&#47;2019-BestMove&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1575424810313');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+     <div class='tableauPlaceholder' id='viz1575424810313' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;13&#47;139-A4New&#47;2019-BestMove&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='139-A4New&#47;2019-BestMove' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;13&#47;139-A4New&#47;2019-BestMove&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1575424810313');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.5)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
       <hr />
 
 
+      <h2>5.0 - Actually, a Comeback on the rise</h2>
+      <p>5.1	While market pricing is a common and often good indicator for the health of a currency, as we have seen there are flaws in this metric since non-stable variable can cause severe up and down swings not indicative of the actual performance of the cryptocurrency.</p>
+      <p>5.2	There is a far more reliable indicator for growth, and it paints an entirely different picture of the current state of cryptocurrencies. This metric is the volume of cryptocurrency that is being traded.</p>
+      <p>5.3	The trade volume metric shows us that the use of cryptocurrencies is in fact higher than ever, even compare to December of 2017 when a bitcoin was valued at $20,000.</p>
+
       <!-- Visual #5 -->
-      <!-- PUT CODE HERE -->
-
-
-      <div id="writeupBox" style="padding-left: 70px; padding-right: 70px;">
-      <h2>Summary</h2>
-      <p>
-        For the final project, we decided to use our dataset from Assignment #3 as we there are a lot of ways to approach this.
-        The narrative of this website is to display how news affects the market of the crypto currencies. The first graph is used to describe price over time for a selected crypto, while the second one outlines volume. The third one shows a timeframe of announcements being made and how it correlates to the daily market by month. Next one displays the maximum possible profit project for each crypto. Lastly, we can see the trend between google data searches for each currency and how much they are worth in reality. Conclusion:...
-      </p>
+      <h3>Volume vs Time of a selected token</h3>
+      <div id="selectorContainer">
+          <label for="coin2Selector">Project: </label>
+          <select id="coin2Selector">
+              <option value="BTC" selected>BTC</option>
+          </select>
       </div>
+      <svg width="1000" height="500" id="svg2"></svg>
+      <hr />
 
+      <h2>6.0 - Conclusion: What does this mean</h2>
+      <p>6.1	While the hype in 2017 saw huge influx in cryptocurrency projects most of them were scams riding off the media attention that artificially inflated the value of nearly every cryptocurrencies that was announced.</p>
+      <p>6.2	Cryptocurrencies and Blockchains are in fact as cool as they were made out to be and in 2017 and 2018 big enterprises realized that they needed blockchains.</p>
+      <p>6.3	Now Google, IBM, Microsoft, Amazon, SWIFT, Oracle and other are all working heavily to develop blockchain technology.</p>
+      <p>6.4	It is expected that in 2021 and 2022 blockchain technology will see massive adoption as services by these enterprises are pushed to the public.</p>
+      <p>6.5	The market cap bubble was just a mainstream, artificial phenomenon which is overshadowing real and tangible growth occurring right now.</p>
+
+
+<!--      <div id="writeupBox" style="padding-left: 70px; padding-right: 70px;">-->
+<!--      <h2>Summary</h2>-->
+<!--      <p>-->
+<!--        For the final project, we decided to use our dataset from Assignment #3 as we there are a lot of ways to approach this.-->
+<!--        The narrative of this website is to display how news affects the market of the crypto currencies. The first graph is used to describe price over time for a selected crypto, while the second one outlines volume. The third one shows a timeframe of announcements being made and how it correlates to the daily market by month. Next one displays the maximum possible profit project for each crypto. Lastly, we can see the trend between google data searches for each currency and how much they are worth in reality. Conclusion:...-->
+<!--      </p>-->
+<!--      </div>-->
 
   </body>
 </html>
